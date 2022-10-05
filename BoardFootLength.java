@@ -16,11 +16,6 @@ import java.util.Scanner;
 final class BoardFootLength {
 
     /**
-    * Constant assigned to 144.
-    */
-    public static final float BOARD_FOOT = 144;
-
-    /**
     * Prevent instantiation.
     * Throw an exception IllegalStateException.
     * if this ever is called
@@ -41,6 +36,7 @@ final class BoardFootLength {
      */
     public static float lengthCalculation(
         final float width, final float height) {
+        final int BOARD_FOOT = 144;
         final float length = BOARD_FOOT / (width * height);
         return length;
     }
